@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" 
+"""
 Module - Minimum Operations
 """
 
 
 def minOperations(n: int) -> int:
-    """ 
+    """
     calculates the fewest number of operations
     needed to result in exactly n H characters in the file.
     """
