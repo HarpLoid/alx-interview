@@ -9,7 +9,7 @@ def validUTF8(data):
     validates UTF-8 Data
     """
     bytes_left = 0
-    
+
     for byte in data:
         if bytes_left == 0:
             if byte >> 5 == 0b110:
@@ -24,5 +24,5 @@ def validUTF8(data):
             if byte >> 6 != 0b10:
                 return False
             bytes_left -= 1
-                
+
     return bytes_left == 0
